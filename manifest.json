@@ -1,0 +1,19 @@
+{
+
+  "description": "Remove shorts from Youtube subscription page",
+  "manifest_version": 2,
+  "name": "Youtube Shorts Remover",
+  "version": "1.0",
+  "homepage_url": "https://github.com/GwaDoush/youtube-short-remover",
+  "icons": {
+    "48": "icons/short-icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["youtube-short-remover.js"]
+    }
+  ]
+
+}
